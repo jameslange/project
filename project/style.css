@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root{
+    --main-txt-color:#2D2E2E;
+    --main-bg-color:#E6EBE0;
+    --secondary-bg-color:#2D2E2E;
+    --secondary-txt-color:#E6EBE0;
+    --transparent-bg-color:rgba(230, 235, 224, .2);
+    --heading-color:rgb(220, 20, 60);
+    font-size:62.5%;
+   
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Cambay', sans-serif;
+}
+
+body{
+    font-size:1.6rem;
+}
+
+nav{
+    width:100%;
+    height:5rem;
+    display:flex;
+    justify-content: center;
+    background-color:var(--secondary-bg-color);
+    position:fixed;
+}
+
+nav ul{
+    display:flex;
+    padding:1rem 2rem;
+}
+
+nav ul li{
+    list-style: none;
+    padding:1rem 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color:var(--secondary-txt-color);
+}
+li>a:hover{
+    text-decoration: underline;
+    color:var(--heading-color);
+    font-size:2rem;
+}
+
+section{
+    min-height:100vh;
+    min-width:100vw;
+}
+p{
+    padding:2rem;
+}
+h1{
+    font-size:2.6rem !important;
+}
+h2{
+    color:var(--heading-color);
+    text-align:center;
+    font-size:2.6rem !important;
+}
+
+span{
+    border-bottom:2px solid var(--heading-color);
+}
+.lead{
+    font-family: 'Play', sans-serif;
+}
+.info{
+    text-indent: 2rem;
+}
+
+h1, h2, h4{
+    font-family: 'Forum', cursive;
+    font-size:2rem;
+   
+}
+
+.home{
+    background-image: url(pics/travel/motorcycle/fog.jpg);
+    background-position: bottom;
+    background-attachment: fixed;  
+    background-size:cover;
+}
+.home>div{
+    width:45%;
+    height:25%;
+    position:relative;
+    left:15%;
+    top:40%;
+}
+/*end home scetion*/
+/*start about section*/
+.about{
+    background-color: var(--main-bg-color);
+}
+
+.about_container{
+    width:100%;
+    height:75%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding:0 10rem;
+}
+
+.me{
+    width:20rem;
+    height:20rem;
+    float:right;
+}
+
+/*start farm grid*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1rem;
+    padding-bottom:2rem;
+    background-color:var(--main-bg-color);
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--2{
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:4;
+    grid-row-end:9;
+}
+
+.gallery__item--3{
+    grid-column-start:3;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:4;
+}
+.gallery__item--4{
+    grid-column-start:6;
+    grid-column-end:8;
+    grid-row-start:1;
+    grid-row-end:7;
+}
+.gallery__item--5{
+    grid-column-start:4;
+    grid-column-end:6;
+    grid-row-start:4;
+    grid-row-end:7;
+}
+
+.gallery__item--6{
+    grid-column-start:8;
+    grid-column-end:12;
+    grid-row-start:1;
+    grid-row-end:5;
+}
+.gallery__item--7{
+    grid-column-start:8;
+    grid-column-end:12;
+    grid-row-start:5;
+    grid-row-end:9;
+}
+
+.gallery__item--8{
+    grid-column-start:4;
+    grid-column-end:8;
+    grid-row-start:7;
+    grid-row-end:9;
+}
+/*end about section*/
+/*start background section*/
+.background{
+    background-color:var(--secondary-bg-color);
+    color:var(--secondary-txt-color);
+    overflow:hidden;
+}
+
+.background>article>div{
+    width:50%;
+    height:75%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:2rem 2rem;
+}
+.background>article{
+    display:flex;
+}
+
+.icons{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    font-size:5rem;
+    padding-top:2rem;
+    color: var(--main-bg-color);
+}
+.icons a:hover{
+    color:var(--heading-color);
+}
+
+/* Container for skill bars */
+.container {
+    width: 100%; 
+    background-color: #ddd; 
+  }
+  
+  .skills {
+    text-align: center;
+    color: var(--main-txt-color);
+  }
+  
+  .html {width: 75%; background-color: #D5B942;} 
+  .css {width: 65%; background-color: #D5B942;} 
+  .js {width: 10%; background-color: #D5B942;} 
+  .solidity {width: 5%; background-color: #D5B942;} 
+
+/*end background section*/
+/*start travel section*/
+.travel{
+    background-color: var(--main-bg-color);
+    color:var(--main-txt-color);
+    padding: 1rem 1rem;
+}
+.travel h3{
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    height:100%;
+    width:100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(12, 1fr);
+    grid-gap:1rem;
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.gallery__item--11{
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:1;
+    grid-row-end:6;
+}
+
+.gallery__item--12{
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:6;
+    grid-row-end:12;
+}
+.gallery__item--13{
+    grid-column-start:9;
+    grid-column-end:13;
+    grid-row-start:1;
+    grid-row-end:13;
+    object-fit: contain;
+}
+.gallery__item--14{
+    grid-column-start:5;
+    grid-column-end:9;
+    grid-row-start:6;
+    grid-row-end:13;
+    object-fit: contain;
+}
+.pano{
+    width:100vw;
+    height:50vh;
+    background-image: url(/pics/travel/sa/volcanopano.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom:1rem;
+}
+
+/*end travel section*/
+/*start contact section*/
+
+.contact{
+    display:flex;
+    flex-direction:column;
+    align-items: left;
+    padding-left:2rem;
+    justify-content: center;
+    background-image:url(/pics/travel/sa/volcano2.jpg);
+    background-position:left;
+    background-size:cover;
+   
+}
+
+.contact .container{
+    display:flex;
+    flex-direction: column;
+    height:75vh;
+    width:35vw;
+    justify-content: space-around;
+    background-color:rgba(230, 235, 224, .2);
+    border-radius:5px;
+    border:none;
+    align-items: center;
+    padding: 0 2rem;
+}
+.contact .container form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width:100%;
+  
+}
+
+.contact form input{
+    margin:.5rem 0;
+    border:none;
+    background-color:var(--transparent-bg-color);
+}
+.contact form div{
+    display:flex;
+    justify-content: center;
+}
+
+button{
+    width:50%;
+    background-color:var(--transparent-bg-color);
+    border:none;
+    margin-top:1rem;
+    
+}
+
+input[type="textarea"]{
+    height:5rem;
+}
+/*end contact section*/
+/*start media querries*/
+
+@media (max-width:770px){
+    .pano{
+       background-position:right;
+    } 
+
+    .contact{
+        background-position:bottom;
+    }
+    .lead, .info{
+        font-size:1.2rem;
+    }
+    .about{
+        height:120vh;
+        padding-top:15rem;
+    }
+    .travel{
+        height:125vh;
+    }
+}
+
+@media(max-width:1000px){
+    .about{
+        padding-top:20rem;
+        padding-bottom:2rem;
+    }
+}
+
+@media (min-width:770px) {
+    nav{
+        justify-content: flex-end;
+    }
+
+    .about>div{
+        flex-direction: row-reverse;
+    }
+   
+    .about>div>img{
+        height:18rem;
+        width:18rem;
+    }
+
+      .travel{
+          height:100vh;
+      }
+
+      .item{
+          height:100%;
+          width:100%;
+      }
+}
+@media (max-width:560px){
+    .background{
+        height:120vh;
+    }
+}
